@@ -14,29 +14,6 @@
 
  --Сервер открывается по адресу  http://127.0.0.1:5000/ или http://0.0.0.0:5000/
 
-6) Также можно воспользоваться следующими командами:
-   - python manage.py db migrate --> создать миграции
-   - python manage.py db upgrade --> применить миграции
-   - python manage.py createsuperuser --> создать суперпользователя (администратора)
-
-Для деплоя на heroku необходимо:
-1) В терминале зайти в директорию проекта:
-2) Выполнить следующие команды:
-   - git init
-   - git add .
-   - git commit -m "initial commit"
-   - heroku login
-   - heroku create
-   - heroku rename -a oldname newname (переименовываем приложение, если необходимо)
-   - heroku addons:create heroku-postgresql --as DATABASE
-   - heroku config:set SECRET_KEY=Ваш_секретный_код
-   - git push heroku master
-   - heroku run python manage.py db migrate
-   - heroku run python manage.py db upgrade
-   - heroku run python manage.py createsuperuser
-
-3) Запуск приложение:
-   - heroku open
 
 -- Данный проект находится на https://fatidique-livre-88037.herokuapp.com/
  --- Логин admin, пароль admin 
